@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../input.css">
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body class="scroll-smooth w-full h-full bg-gray-900 text-rose-500">
+    <header class="flex justify-around items-center bg-gray-950 py-1.5 border-b-2 border-rose-400/50">
+        <h1 class="text-2xl font-medium">My Social</h1>
+        <nav>
+            <ul>
+                <li class="bg text-white bg-[crimson] py-1 px-3 rounded-sm hover:bg-red-400"><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- signup form -->
+    <section class="w-full h-auto py-8 flex justify-center items-center">
+              <form action="./login.html" method="post" id="signup-form" class="bg-gray-950 py-8 px-5 sm:px-7 rounded-2xl border border-gray-700 w-full max-w-md">
+                    <fieldset class="border-[crimson] border-2 flex flex-col justify-center items-center rounded-2xl py-10 px-3 sm:px-5 gap-5">
+                        <legend class="text-xl sm:text-2xl font-bold text-white">SIGN UP</legend>
+
+                        <label for="first-name" class="text-white w-full text-sm sm:text-base">
+                            First Name
+                            <input id="first-name" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="text" placeholder="First Name" required>
+                        </label>
+
+                        <label for="last-name" class="text-white w-full text-sm sm:text-base">
+                            Last Name
+                            <input id="last-name" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="text" placeholder="Last Name" required>
+                        </label>
+
+                        <label for="email" class="text-white w-full text-sm sm:text-base">
+                            Email
+                            <input id="email" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="email" id="email" placeholder="Email or Phone" required>
+                        </label>
+
+                        <label for="password" class="text-white w-full text-sm sm:text-base">
+                            Password
+                            <input id="password" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="password" id="password" placeholder="Password" required>
+                        </label>
+
+                        <label for="confirm-password" class="text-white w-full text-sm sm:text-base">
+                            Confirm Password
+                            <input id="confirm-password" class="border-[crimson] border-2 px-2 py-2 bg-[#0f172a] mt-1 rounded-xl w-full" type="password" id="confirm-password" placeholder="Confirm Password" required>
+                        </label>
+
+                         <input class="bg-[crimson] py-2 px-7 text-white rounded-2xl animate-bounce" type="submit" value="Sign up">
+                    </fieldset>
+                </form>
+    </section>
+
+
+
+    <script src="./auth.js"></script>
+</body>
+</html>
