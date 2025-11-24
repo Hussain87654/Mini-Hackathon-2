@@ -90,7 +90,7 @@ function signup() {
 
   if (!email || !pass) return alert("All fields required!");
 
-  localStorage.setItem(email, pass);
+  localStorage.setItem("user",[email, pass]);
   alert("Account created!");
   renderLogin();
 }
@@ -187,7 +187,7 @@ function renderPosts() {
 
       <!-- Comments -->
       <div class="mt-3">
-        ${p.comments.map(c => `<p class="text-sm">💬 <b>${c.user}</b>: ${c.text}</p>`).join("")}
+        ${p.comments.map(c => `<p class="text-sm ">💬 <b>${c.user}</b>: ${c.text}</p>`).join("")}
       </div>
 
       <input id="c-${p.id}" class="w-full rounded-md p-1 text-sm mt-2 border-[crimson]/50 border-2 bg-[#0f172a]" placeholder="Comment...">
